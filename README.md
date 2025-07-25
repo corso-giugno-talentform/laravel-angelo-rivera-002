@@ -1,6 +1,6 @@
 # Blog Responsive con Bootstrap
 
-Questo progetto è un blog completo, realizzato seguendo le istruzioni fornite, che include una parte grafica totalmente responsive e ottimizzata per dispositivi mobili. Ho integrato Bootstrap tramite CDN per uno stile moderno e reattivo.
+Questo progetto è un blog semplice, realizzato seguendo le istruzioni fornite, che include una parte grafica totalmente responsive e ottimizzata per dispositivi mobili. Ho integrato Bootstrap tramite CDN per uno stile moderno e reattivo.
 
 ---
 
