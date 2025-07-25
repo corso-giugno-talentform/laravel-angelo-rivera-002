@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card hover-scale">
     <div class="card h-100">
         <img src="{{ $article['image'] }}" class="card-img-top" width="50" height="300" alt="">
         <div class="grid py-3 gap-4 mx-5 text-center">

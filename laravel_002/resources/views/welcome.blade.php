@@ -6,7 +6,7 @@
         <h1 class="display-4">Benvenuto nel mio Blog</h1>
         <p class="lead">Una grande introduzione o immagine di copertina che si estende oltre il normale contenuto.
         </p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Inizia a leggere</a>
+        <a class="btn btn-primary btn-lg hover-scale" href="#" role="button">Inizia a leggere</a>
     </div>
 </section>
 

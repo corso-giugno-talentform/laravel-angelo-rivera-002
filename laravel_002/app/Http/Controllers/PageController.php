@@ -49,21 +49,21 @@ class PageController extends Controller
         [
             'id' => 1,
             'titolo' => 'Post 1',
-            'descrizione' => 'Una breve descrizione dell articolo 1. Questo è un esempio di contenuto.',
+            'descrizione' => 'Una breve descrizione del post 1. Questo è un esempio di contenuto.',
             'data' => '10/10/10',
             'autore' => 'Aruel'
         ],
         [
             'id' => 2,
             'titolo' => 'Post 2',
-            'descrizione' => 'Una breve descrizione dell articolo 2. Contenuto di esempio per il blog.',
+            'descrizione' => 'Una breve descrizione del post 2. Contenuto di esempio per il blog.',
             'data' => '11/11/11',
             'autore' => 'Angelo'
         ],
         [
             'id' => 3,
             'titolo' => 'Post 3',
-            'descrizione' => 'Altra descrizione breve di esempio per questo articolo.',
+            'descrizione' => 'Altra descrizione breve di esempio per questo post.',
             'data' => '12/12/12',
             'autore' => 'Rivera'
         ],
