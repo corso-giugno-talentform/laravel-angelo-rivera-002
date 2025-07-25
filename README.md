@@ -32,7 +32,7 @@ Il progetto si basa con le seguenti caratteristiche principali:
 
 ### 1. Integrazione di Bootstrap CDN
 
-Nel file `index.html`, ho inserito il link CDN di Bootstrap per garantire uno stile moderno e responsive:
+Nel file `main.blade.php`, ho inserito il link CDN di Bootstrap per garantire uno stile moderno e responsive:
 
 ```html
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
