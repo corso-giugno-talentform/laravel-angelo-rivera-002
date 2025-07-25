@@ -1,0 +1,16 @@
+.jumbotron-hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjJ6eXJzbWNkbTNjMm40ZHBlbndubGo5cmxlNXdtNXFxZHNhOGppMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Sye75bfzPZrmo/giphy.gif') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 15px 0;
+}
