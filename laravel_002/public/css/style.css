@@ -14,3 +14,13 @@ footer {
     background-color: #f8f9fa;
     padding: 15px 0;
 }
+
+#intro {
+    margin-top: 58px;
+}
+
+@media (max-width: 991px) {
+    #intro {
+        margin-top: 45px;
+    }
+}

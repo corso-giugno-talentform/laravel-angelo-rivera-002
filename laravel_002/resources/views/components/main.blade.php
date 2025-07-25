@@ -12,18 +12,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
-    <style>
-        #intro {
-            margin-top: 58px;
-        }
-
-        @media (max-width: 991px) {
-            #intro {
-                margin-top: 45px;
-            }
-        }
-    </style>
-
 </head>
 
 <body class="d-flex flex-column min-vh-100">
