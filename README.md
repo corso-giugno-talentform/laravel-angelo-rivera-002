@@ -1,6 +1,6 @@
 # Blog Responsive con Bootstrap
 
-Questo progetto è un blog completo, realizzato seguendo le istruzioni fornite, che include una parte grafica totalmente responsive e ottimizzata per dispositivi mobili. Ho utilizzato Vue.js come framework principale per la gestione delle rotte e dei componenti, integrando Bootstrap tramite CDN per uno stile moderno e reattivo.
+Questo progetto è un blog completo, realizzato seguendo le istruzioni fornite, che include una parte grafica totalmente responsive e ottimizzata per dispositivi mobili. Ho utilizzato BootStrap come framework principale per la gestione delle rotte e dei componenti, integrando Bootstrap tramite CDN per uno stile moderno e reattivo.
 
 ---
 
