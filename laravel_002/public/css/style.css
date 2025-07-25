@@ -10,6 +10,18 @@
     padding: 20px;
 }
 
+.jumbotron-posts {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
 footer {
     background-color: #f8f9fa;
     padding: 15px 0;

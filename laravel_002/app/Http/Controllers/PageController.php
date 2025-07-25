@@ -11,14 +11,26 @@ class PageController extends Controller
             'id' => 1,
             'slug' => 'ice-1',
             'titolo' => 'Ice-Breaker',
-            'descrizione' => 'Una breve descrizione dell articolo 1. Questo è un esempio di contenuto.',
+            'descrizione' => 'Lo scioglimento dei ghiacciai è causato dal riscaldamento globale e provoca l innalzamento del livello del mare.',
+
+            'descrizione-dett' => 'Lo scioglimento dei ghiacciai è il processo attraverso il quale le masse di ghiaccio presenti sulle montagne e sulle regioni polari si trasformano in acqua liquida. Questo fenomeno avviene quando le temperature ambientali superano il punto di fusione del ghiaccio e si sta accelerando a causa dei cambiamenti climatici globali.
+
+            Le cause principali dello scioglimento includono il riscaldamento globale, che è dovuto principalmente alle emissioni di gas serra come anidride carbonica e metano, e i cambiamenti nelle correnti atmosferiche e oceaniche. Un altro fattore importante è la riduzione dell albedo, cioè la capacità delle superfici di riflettere la luce solare, che diminuisce con la perdita di ghiaccio e neve, portando a un ulteriore riscaldamento della superficie.
+
+            Lo scioglimento dei ghiacciai ha molte implicazioni gravi. Contribuisce all innalzamento del livello del mare, mettendo a rischio le aree costiere e le isole. Può provocare alterazioni negli ecosistemi, portando alla perdita di habitat per specie che dipendono dai ghiacciai e dalle regioni fredde. Inoltre, influisce sulle risorse idriche, poiché molte fiumi dipendono dall acqua di scioglimento glaciale. Un ulteriore problema sono i rischi di eventi climatici estremi come inondazioni e siccità, causati dai cambiamenti nei modelli di distribuzione delle acque.
+
+            Esempi di ghiacciai in rapido scioglimento sono quelli dell Himalaya, come il ghiacciaio Thwaites in Antartide, noto come il ghiacciaio dell apocalisse, e i ghiacciai delle Alpi, in Svizzera e Italia.
+
+            Per contrastare questo fenomeno, sono necessarie azioni di mitigazione come la riduzione delle emissioni di gas serra, la promozione di fonti di energia rinnovabile, la protezione delle aree glaciali e la sensibilizzazione pubblica. La ricerca scientifica è fondamentale per monitorare e prevedere i processi di fusione e per sviluppare strategie di adattamento.',
+
             'image' => 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnZscm56empuN3NmNjdzaWw5OGxxNDU1ZDk5bHN5MGxnY25na3E4dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l41YBikSYhA4LybJe/giphy.gif'
         ],
         [
             'id' => 2,
             'slug' => 'ice-2',
             'titolo' => 'Storm-Breaker',
-            'descrizione' => 'Una breve descrizione dell articolo 2. Contenuto di esempio per il blog.',
+            'descrizione' => 'Stormbreaker: potente martello di Thor, evoca tempeste e distrugge tutto.',
+            'descrizione-dett' => 'Altra descrizione breve di esempio per questo articolo.',
             'image' => 'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExenUwcHY3bHV3N3Qzc2dqbTlhdWZ4eXpnaWJlc3ZxaDgxeTVuaTFzYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/uJZHyX8RERoQNhigJU/giphy.gif'
         ],
         [
@@ -26,6 +38,7 @@ class PageController extends Controller
             'slug' => 'ice-3',
             'titolo' => 'Aurora',
             'descrizione' => 'Altra descrizione breve di esempio per questo articolo.',
+            'descrizione-dett' => 'Altra descrizione breve di esempio per questo articolo.',
             'image' => 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWxuNnZoYmF5Y2UyNmFkYWcyNDBycDI4NWpjb2JzNWF6YzdlOHZmeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SZfBTkwb2jx9C/giphy.gif'
         ],
     ];
