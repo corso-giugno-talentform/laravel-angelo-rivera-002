@@ -24,7 +24,7 @@ Il progetto si basa con le seguenti caratteristiche principali:
 
 2. **Dettaglio articolo (`/article/:$slug`)**  
    - Pagina parametrica che mostra i dettagli di un articolo selezionato.
-   - Gli elementi vengono caricati dinamicamente in base alla chiave $slug passato nella route.
+   - Gli elementi vengono caricati dinamicamente in base alla chiave $slug passata nella route.
 
 ---
 
