@@ -30,15 +30,16 @@ class PageController extends Controller
             'slug' => 'ice-2',
             'titolo' => 'Storm-Breaker',
             'descrizione' => 'Stormbreaker: potente martello di Thor, evoca tempeste e distrugge tutto.',
-            'descrizione-dett' => 'Altra descrizione breve di esempio per questo articolo.',
+            'descrizione-dett' => 'Stormbreaker è un martello magico di aspetto imponente, realizzato con materiali extraterrestri e dotato di una lama affilata sulla testa. Ha un manico lungo e robusto, decorato con dettagli intricati e rune che brillano di energia. È capace di evocare tempeste e fulmini, ed è uno degli strumenti più potenti di Thor, in grado di affrontare avversari incredibilmente forti e distruggere grandi strutture.',
             'image' => 'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExenUwcHY3bHV3N3Qzc2dqbTlhdWZ4eXpnaWJlc3ZxaDgxeTVuaTFzYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/uJZHyX8RERoQNhigJU/giphy.gif'
         ],
         [
             'id' => 3,
             'slug' => 'ice-3',
             'titolo' => 'Aurora',
-            'descrizione' => 'Altra descrizione breve di esempio per questo articolo.',
-            'descrizione-dett' => 'Altra descrizione breve di esempio per questo articolo.',
+            'descrizione' => 'L aurora boreale è uno spettacolo di luci colorate nel cielo polare.',
+            'descrizione-dett' => 'L aurora boreale è uno spettacolare fenomeno naturale che si manifesta nel cielo notturno delle regioni polari. Si presenta come un soffice alone di luci colorate che si muovono lentamente, creando forme fluide e danzanti. I colori predominanti sono il verde, il rosa, il viola e il rosso, che si mescolano e si sovrappongono, dando vita a un vero e proprio spettacolo visivo. Questo fenomeno si verifica quando particelle cariche provenienti dal sole colpiscono l atmosfera terrestre, interagendo con il campo magnetico del pianeta. Le aurore boreali sono considerate uno dei più affascinanti e misteriosi spettacoli della natura, simbolo di magia e meraviglia nel cielo artico.',
+
             'image' => 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWxuNnZoYmF5Y2UyNmFkYWcyNDBycDI4NWpjb2JzNWF6YzdlOHZmeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SZfBTkwb2jx9C/giphy.gif'
         ],
     ];
