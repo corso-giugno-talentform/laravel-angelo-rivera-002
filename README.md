@@ -1,48 +1,38 @@
-# 📂 Progetto Portfolio - Esercizio di Push con Laravel
+# Blog Responsive con Vue.js e Bootstrap
 
-Benvenuto nel mio progetto! 🎉 Questo repository rappresenta un esercizio pratico che ho svolto per mettere alla prova le mie competenze con Laravel e il versionamento tramite Git.
-
----
-
-## 🎯 Obiettivo dell'esercizio
-
-L'obiettivo principale di questo esercizio era:
-
-- **Realizzare una pagina web semplice** (presa da esercizi precedenti) e personalizzarla
-- **Effettuare il push del codice** su GitHub per esercitarmi con il flusso di lavoro di Git e Laravel
-- **Sperimentare con Laravel** come framework backend
+Questo progetto è un blog completo, realizzato seguendo le istruzioni fornite, che include una parte grafica totalmente responsive e ottimizzata per dispositivi mobili. Ho utilizzato Vue.js come framework principale per la gestione delle rotte e dei componenti, integrando Bootstrap tramite CDN per uno stile moderno e reattivo.
 
 ---
 
-## 🔧 Cosa ho fatto
+## Struttura del progetto
 
-- Ho riutilizzato una pagina web creata in esercizi precedenti, adattandola per il progetto
-- Ho configurato un progetto Laravel per gestire eventuali funzionalità future
-- Ho effettuato il push del codice su GitHub, seguendo le best practice di versionamento
-- Ho documentato tutto nel README per condividere il mio processo e i risultati
+Il progetto si basa su Vue.js con le seguenti caratteristiche principali:
 
----
-
-## 💻 Tecnologie utilizzate
-
-- **Laravel**
-- **PHP** 
-- **Bootstrap** 
-- **Git/GitHub** per il versionamento
-- **HTML/CSS** per la pagina web
+- **Controller**: Gestione delle rotte e dei dati dinamici
+- **Layout**: Layout principale con header, footer e area di contenuto
+- **Componenti con parametri**: Componenti riutilizzabili con props
+- **Named Route**: Navigazione tramite rotte nominate
+- **Bootstrap CDN**: Inclusione di Bootstrap via CDN per lo stile e la responsività
 
 ---
 
-## 🚀 Risultati e riflessioni
+## Rotte implementate
 
-Questo esercizio mi ha aiutato a consolidare le mie competenze di:
+1. **Homepage (`/`)**  
+   - Pagina indice contenente una lista di tutti gli articoli disponibili.
+   - Ogni articolo è rappresentato da un componente che mostra titolo, anteprima e link al dettaglio.
 
-- Gestione del codice con Git e GitHub
-- Utilizzo di Laravel come framework per applicazioni web
-- Riutilizzo e adattamento di componenti web già esistenti con Bootstrap
-
-È stato un ottimo modo per mettere in pratica teoria e migliorare il mio flusso di lavoro!
+2. **Dettaglio articolo (`/article/:id`)**  
+   - Pagina parametrica che mostra i dettagli di un articolo selezionato.
+   - Gli elementi vengono caricati dinamicamente in base all'ID passato nella route.
 
 ---
 
-*Con passione e curiosità, sempre in evoluzione.* ✨
+## Come ho svolto l'esercizio
+
+### 1. Integrazione di Bootstrap CDN
+
+Nel file `index.html`, ho inserito il link CDN di Bootstrap per garantire uno stile moderno e responsive:
+
+```html
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
