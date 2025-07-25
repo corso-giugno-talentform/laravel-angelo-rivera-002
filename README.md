@@ -22,9 +22,9 @@ Il progetto si basa con le seguenti caratteristiche principali:
    - Pagina indice contenente una lista di tutti gli articoli disponibili.
    - Ogni articolo è rappresentato da un componente che mostra titolo, anteprima e link al dettaglio.
 
-2. **Dettaglio articolo (`/article/:id`)**  
+2. **Dettaglio articolo (`/article/:$slug`)**  
    - Pagina parametrica che mostra i dettagli di un articolo selezionato.
-   - Gli elementi vengono caricati dinamicamente in base all'ID passato nella route.
+   - Gli elementi vengono caricati dinamicamente in base alla variabile $slug passato nella route.
 
 ---
 
