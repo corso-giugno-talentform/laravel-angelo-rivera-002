@@ -6,7 +6,7 @@ Questo progetto è un blog completo, realizzato seguendo le istruzioni fornite, 
 
 ## Struttura del progetto
 
-Il progetto si basa su Vue.js con le seguenti caratteristiche principali:
+Il progetto si basa con le seguenti caratteristiche principali:
 
 - **Controller**: Gestione delle rotte e dei dati dinamici
 - **Layout**: Layout principale con header, footer e area di contenuto
