@@ -1,6 +1,5 @@
 <x-navbar />
 <x-main />
-
 <section class="jumbotron-posts mb-4" style="background-image: url('{{ $article['image'] }}')">
     <div class="container">
         <h1 class="display-4">{{ $article['titolo'] }}</h1>
@@ -9,11 +8,27 @@
     </div>
 </section>
 
-<section class="p-5 m-5 mb-5">
+<section class="p-5 m-5 mb-5 bg-colorful rounded-4">
     <p class="fs-4 letter-spacing-3">{{ $article['descrizione-dett'] }}</p>
 </section>
 
-<div class="py-5 my-5 w-50 mx-auto">
-    <x-form :form="$form" />
+<div class="modal fade" id="rvwarticle" tabindex="-1" aria-labelledby="review-article" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Un pensiero su questo articolo</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <x-form :form="$form" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="py-5 my-5 mx-auto">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rvwarticle"
+        data-bs-whatever="review-article">Scrivici un tuo pensiero su questo articolo</button>
 </div>
 <x-footer />
