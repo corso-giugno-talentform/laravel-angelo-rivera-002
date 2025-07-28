@@ -8,8 +8,8 @@
     </div>
 </section>
 
-<section class="p-5 m-5 mb-5 bg-colorful rounded-4">
-    <p class="fs-4 letter-spacing-3">{{ $article['descrizione-dett'] }}</p>
+<section class="container p-5 my-5 bg-colorful rounded-4">
+    <p class="p-5 fs-4 letter-spacing-3">{{ $article['descrizione-dett'] }}</p>
 </section>
 
 <div class="modal fade" id="rvwarticle" tabindex="-1" aria-labelledby="review-article" aria-hidden="true">
