@@ -9,7 +9,7 @@ class PageController extends Controller
     protected static $articles = [
         [
             'id' => 1,
-            'slug' => 'ice-1',
+            'slug' => 'ice-breaker',
             'titolo' => 'Ice-Breaker',
             'descrizione' => 'Lo scioglimento dei ghiacciai è causato dal riscaldamento globale e provoca l innalzamento del livello del mare.',
 
@@ -27,7 +27,7 @@ class PageController extends Controller
         ],
         [
             'id' => 2,
-            'slug' => 'ice-2',
+            'slug' => 'storm-breaker',
             'titolo' => 'Storm-Breaker',
             'descrizione' => 'Stormbreaker: potente martello di Thor, evoca tempeste e distrugge tutto.',
             'descrizione-dett' => 'Stormbreaker è un martello magico di aspetto imponente, realizzato con materiali extraterrestri e dotato di una lama affilata sulla testa. Ha un manico lungo e robusto, decorato con dettagli intricati e rune che brillano di energia. È capace di evocare tempeste e fulmini, ed è uno degli strumenti più potenti di Thor, in grado di affrontare avversari incredibilmente forti e distruggere grandi strutture.',
@@ -35,7 +35,7 @@ class PageController extends Controller
         ],
         [
             'id' => 3,
-            'slug' => 'ice-3',
+            'slug' => 'aurora',
             'titolo' => 'Aurora',
             'descrizione' => 'L aurora boreale è uno spettacolo di luci colorate nel cielo polare.',
             'descrizione-dett' => 'L aurora boreale è uno spettacolare fenomeno naturale che si manifesta nel cielo notturno delle regioni polari. Si presenta come un soffice alone di luci colorate che si muovono lentamente, creando forme fluide e danzanti. I colori predominanti sono il verde, il rosa, il viola e il rosso, che si mescolano e si sovrappongono, dando vita a un vero e proprio spettacolo visivo. Questo fenomeno si verifica quando particelle cariche provenienti dal sole colpiscono l atmosfera terrestre, interagendo con il campo magnetico del pianeta. Le aurore boreali sono considerate uno dei più affascinanti e misteriosi spettacoli della natura, simbolo di magia e meraviglia nel cielo artico.',
@@ -69,21 +69,42 @@ class PageController extends Controller
         ],
     ];
 
+    protected static $form = [
+        [
+            'nome' => 'Inserisci il tuo nome',
+            'email' => 'nome@esempio.com',
+            'messaggio' => 'Scrivi il tuo messaggio',
+        ]
+    ];
+
     public function homepage()
     {
-        return view('welcome', ['articles' => self::$articles], ['posts' => self::$posts]);
+        return view('welcome', [
+            'articles' => self::$articles,
+            'posts' => self::$posts,
+            'form' => self::$form
+        ]);
     }
 
     public function contacts()
     {
-        return view('contatti');
+        return view('contatti', ['form' => self::$form]);
     }
 
     public function article($articleSlug)
     {
         foreach (self::$articles as $article) {
             if ($article['slug'] === $articleSlug) {
-                return view('article', ['article' => $article]);
+                $form = self::$form;
+
+                if (request()->routeIs('article')) {
+                    $form[0]['messaggio'] = "Scrivici un tuo pensiero su: {$article['titolo']}";
+                }
+
+                return view('article', [
+                    'article' => $article,
+                    'form' => $form
+                ]);
             }
         }
         abort(404);

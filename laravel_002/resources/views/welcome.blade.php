@@ -17,7 +17,7 @@
         <!-- Articoli -->
         @foreach ($articles as $article)
             <div class="col-md-4 mb-4">
-                <x-card :article="$article" :isDetail="false" />
+                <x-card :article="$article" />
             </div>
         @endforeach
 

@@ -13,7 +13,7 @@
                     <a class="nav-link active hover-scale" href="{{ route('homepage') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link hover-scale" href="abort(404)">Articoli</a>
+                    <a class="nav-link hover-scale" href="404">Articoli</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link hover-scale" href="{{ route('contacts') }}">Contatti</a>
