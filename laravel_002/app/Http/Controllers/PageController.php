@@ -109,4 +109,15 @@ class PageController extends Controller
         }
         abort(404);
     }
+
+    public function send(Request $request)
+    {
+        $data = [
+            'nome' => $request->nome,
+            'email' => $request->email,
+            'msg' => $request->msg,
+            'id' => $request->form_id
+        ];
+        dd($data);
+    }
 }

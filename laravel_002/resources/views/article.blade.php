@@ -20,7 +20,9 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <x-form :form="$form" />
+                <x-form :form="$form">
+                    <input type="hidden" id="form_id" name="form_id" value="2">
+                </x-form>
             </div>
         </div>
     </div>

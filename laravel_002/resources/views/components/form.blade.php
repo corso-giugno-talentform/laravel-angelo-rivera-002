@@ -1,6 +1,8 @@
 <div class="row justify-content-center">
     <div class="col-lg-8">
-        <form class="" action="#" method="POST">
+        <form class="" action="{{ route('send') }}" method="POST">
+            @csrf
+            {{ $slot }}
             <div class="mb-3">
                 <label for="nome" class="form-label">Nome</label>
                 <input type="text" class="form-control" id="nome" name="nome"
