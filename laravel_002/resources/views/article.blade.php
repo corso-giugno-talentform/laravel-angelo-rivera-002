@@ -12,8 +12,8 @@
     <p class="p-5 fs-4 letter-spacing-3">{{ $article['descrizione-dett'] }}</p>
 </section>
 
-<div class="modal fade" id="rvwarticle" tabindex="-1" aria-labelledby="review-article" aria-hidden="true">
-    <div class="modal-dialog">
+<div class="modal fade" id="rvwarticle" tabindex="-1" role="dialog" aria-labelledby="review-article" aria-hidden="true">
+    <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">Un pensiero su questo articolo</h1>

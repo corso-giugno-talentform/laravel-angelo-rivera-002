@@ -141,6 +141,7 @@ class PageController extends Controller
         Mail::to($admin_email)->send(new SendAdminMail($data));
 
 
-        dd('Emails Inviate');
+        $success = 'Grazie per averci contattato. Riceverai una email al piu presto.';
+        return redirect()->back()->with('success', $success);
     }
 }
