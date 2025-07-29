@@ -21,7 +21,9 @@
             </div>
             <div class="modal-body">
                 <x-form :form="$form">
-                    <input type="hidden" id="form_id" name="form_id" value="2">
+                    <x-slot name="id">
+                        <input type="hidden" id="form_id" name="form_id" value="1">
+                    </x-slot>
                 </x-form>
             </div>
         </div>

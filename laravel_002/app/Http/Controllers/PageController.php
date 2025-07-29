@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\SendAdminMail;
+use App\Mail\SendMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class PageController extends Controller
 {
@@ -112,12 +115,32 @@ class PageController extends Controller
 
     public function send(Request $request)
     {
+        $request->validate([
+            'nome' => ['required', 'max:20'],
+            'email' => ['required', 'email', 'max:20'],
+            'msg' => ['required', 'min:10'],
+        ]);
+
+        $admin_email = 'admin@aiss.it';
+
         $data = [
-            'nome' => $request->nome,
+            'id' => $request->form_id,
+            'nome' => strtolower($request->nome),
             'email' => $request->email,
             'msg' => $request->msg,
-            'id' => $request->form_id
         ];
-        dd($data);
+        if ($request->form_id)
+            foreach (self::$articles as $element) {
+                if ($element['id'] == $request->form_id) {
+                    $data['titolo'] = $element['titolo'];
+                    $data['descrizione'] = $element['descrizione'];
+                }
+            }
+
+        Mail::to($request->email)->send(new SendMail($data));
+        Mail::to($admin_email)->send(new SendAdminMail($data));
+
+
+        dd('Emails Inviate');
     }
 }
